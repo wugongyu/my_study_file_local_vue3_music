@@ -12,8 +12,14 @@
     "baseUrl": "./", // 用于解析非绝对模块名的基本目录，相对模块不受影响
     "paths": {
       //用于设置模块名称基于baseUrl的路径映射关系
-      "@/*":["./src/*"]
-    }
+      "@/*": [
+        "./src/*"
+      ],
+    },
+    // 此配置解决 -- 类型“ImportMeta”上不存在属性“env”的问题，即import.meta.env.BASE_URL报错问题
+    "types": [
+      "vite/client"
+    ]
   },
   "references": [
     {

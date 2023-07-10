@@ -13,7 +13,7 @@ node_modules
 dist
 dist-ssr
 coverage
-*.lacal
+*.local
 
 /cypress/videos/
 /cypress/screenshots/
