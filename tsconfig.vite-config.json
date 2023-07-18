@@ -3,6 +3,6 @@
   "include": ["vite.config.*"],
   "compilerOptions": {
     "composite": true, // 是否开启项目编译，开启该功能，将会生成被编译文件所在的目录，同时开启declaration、declarationMap和incremental
-    "types": ["node", "vitest"], // 用来指定需要包含的模块，并将其包含在全局范围内
+    "types": ["node"], // 用来指定需要包含的模块，并将其包含在全局范围内   [, "vitest"]
   }
 }
