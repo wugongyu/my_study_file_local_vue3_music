@@ -4,9 +4,14 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Banner: typeof import('./src/components/common/Banner.vue')['default']
     ElAlert: typeof import('element-plus/es')['ElAlert']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElInput: typeof import('element-plus/es')['ElInput']
+    ElScrollbar: typeof import('element-plus/es')['ElScrollbar']
+    IconPark: typeof import('./src/components/common/IconPark.vue')['default']
+    Menu: typeof import('./src/components/layout/menu/Menu.vue')['default']
+    MenuList: typeof import('./src/components/layout/menu/MenuList.vue')['default']
   }
 }
 
