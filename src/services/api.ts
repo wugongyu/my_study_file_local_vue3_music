@@ -1,5 +1,7 @@
 import type { Banner } from "@/models/banner";
 import type { SearchHotDetail, SearchSuggest } from "@/models/search";
+import type { Song } from "@/models/song";
+import type { SongUrl } from "@/models/song_url";
 import type { UserProfile } from "@/models/user";
 import http from "./http";
 
@@ -43,4 +45,17 @@ export async function useSearchSuggest(keywords: string) {
 export async function useSearchHotDetail() {
   const {data} = await http.get<{ data: SearchHotDetail[] }>('search/hot/detail');
   return data;
+}
+
+/**
+ * songs
+ * */ 
+export async function useSongUrl(id: number) {
+  const {data} = await http.get<{ data: SongUrl[] }>('/song/url', {id});
+  return data.first();
+}
+
+export async function useDetail(id: number) {
+  const {songs} = await http.get<{ songs: Song[] }>('/song/detail', {ids: id});
+  return songs.first();
 }

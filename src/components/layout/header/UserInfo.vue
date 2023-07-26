@@ -1,7 +1,7 @@
 <template>
   <div class="flex item-center cursor-pointer hover-text">
-    <ElAvatar class="bg-gray-200" size="small" round :src="profile.avatarUrl ?? ''"></ElAvatar>
-    <span class="text-xs ml-1.5" v-if="isLogin">{{ profile.nickname }}</span>
+    <ElAvatar class="bg-gray-200" size="small" round :src="profile?.avatarUrl ?? ''"></ElAvatar>
+    <span class="text-xs ml-1.5" v-if="isLogin">{{ profile?.nickname }}</span>
     <span class="text-xs ml-1.5" v-else @click="showLogin = true">login</span>
   </div>
   <el-dialog v-model="showLogin" title="Login" width="330px" append-to-body>

@@ -45,6 +45,7 @@ export interface SearchSuggestArtists extends BasicSearchSuggestItem {
 	transNames: string[];
 	alia: string[];
 	trans: string;
+	coverImgUrl: string;
 }
 export interface SearchSuggestSongsArtists extends BasicSearchSuggestItem {
 	trans?: any;

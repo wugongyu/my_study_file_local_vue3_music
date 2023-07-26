@@ -6,7 +6,7 @@
   >
     <template #reference>
       <el-input
-        placeholder="search for music、mv、playlist"
+        placeholder="search music、mv、list"
         :prefix-icon="Search"
         clearable
         @input="handleInput"
