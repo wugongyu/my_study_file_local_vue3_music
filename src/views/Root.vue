@@ -17,6 +17,7 @@
       <div class="h-20">
         <Footer />
       </div>
+      <PlayList />
     </div>
   </div>
 </template>
@@ -25,6 +26,7 @@
 import Menu from '@/components/layout/menu/Menu.vue';
 import Header from '@/components/layout/header/Header.vue'; 
 import Footer from '@/components/layout/footer/Footer.vue';
+import PlayList from '@/components/layout/playlist/PlayList.vue';
 </script>
 
 <style></style>
